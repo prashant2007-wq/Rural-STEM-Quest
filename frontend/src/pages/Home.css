@@ -103,9 +103,15 @@
   color: white;
 }
 
-.math-bg { background: linear-gradient(135deg, #f59e0b, #ef4444); }
-.science-bg { background: linear-gradient(135deg, #10b981, #3b82f6); }
-.cs-bg { background: linear-gradient(135deg, #8b5cf6, #ec4899); }
+.math-bg {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+.science-bg {
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+}
+.cs-bg {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
 
 .card-info h3 {
   font-size: 1.1rem;
@@ -119,9 +125,15 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* Features Section */
