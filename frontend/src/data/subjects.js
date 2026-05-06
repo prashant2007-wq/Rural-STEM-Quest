@@ -1,0 +1,38 @@
+export const subjects = [
+  {
+    id: 'maths',
+    name: 'Mathematics',
+    nameHi: 'गणित',
+    icon: 'Calculator',
+    color: 'from-blue-500 to-indigo-600',
+    bgColor: 'bg-blue-100 dark:bg-blue-900/30',
+    textColor: 'text-blue-600 dark:text-blue-400',
+    description: 'Master numbers, algebra, and geometry.',
+    descriptionHi: 'संख्याओं, बीजगणित और ज्यामिति में महारत हासिल करें।',
+    totalLevels: 10,
+  },
+  {
+    id: 'science',
+    name: 'Science',
+    nameHi: 'विज्ञान',
+    icon: 'Microscope',
+    color: 'from-emerald-400 to-teal-500',
+    bgColor: 'bg-emerald-100 dark:bg-emerald-900/30',
+    textColor: 'text-emerald-600 dark:text-emerald-400',
+    description: 'Explore physics, chemistry, and biology.',
+    descriptionHi: 'भौतिकी, रसायन विज्ञान और जीव विज्ञान का अन्वेषण करें।',
+    totalLevels: 10,
+  },
+  {
+    id: 'cs',
+    name: 'Computer Science',
+    nameHi: 'कंप्यूटर विज्ञान',
+    icon: 'Laptop',
+    color: 'from-purple-500 to-fuchsia-600',
+    bgColor: 'bg-purple-100 dark:bg-purple-900/30',
+    textColor: 'text-purple-600 dark:text-purple-400',
+    description: 'Learn programming and digital skills.',
+    descriptionHi: 'प्रोग्रामिंग और डिजिटल कौशल सीखें।',
+    totalLevels: 10,
+  }
+];

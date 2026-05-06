@@ -4,13 +4,9 @@ import { motion } from 'framer-motion';
 import {
   Sparkles,
   ArrowRight,
-  Brain,
-  Atom,
   Terminal,
   Target,
   Shield,
-  Zap,
-  Star,
 } from 'lucide-react';
 const Home = ({ language }) => {
   const translations = {

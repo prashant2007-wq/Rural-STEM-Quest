@@ -36,7 +36,12 @@ function App() {
       xp: 0,
       progress: { maths: 0, science: 0, cs: 0 },
       currentNodes: { maths: 1, science: 1, cs: 1 },
+      isTeacher: userData.role === 'teacher'
     };
+    if (userData.language) {
+      setLanguage(userData.language);
+      localStorage.setItem('rsq_lang', userData.language);
+    }
     localStorage.setItem('rsq_user', JSON.stringify(newUser));
     setUser(newUser);
   };
@@ -98,7 +103,7 @@ function App() {
                 path="/login"
                 element={
                   user ? (
-                    <Navigate to="/dashboard" />
+                    user.isTeacher ? <Navigate to="/teacher" /> : <Navigate to="/dashboard" />
                   ) : (
                     <Login onLogin={handleLogin} language={language} />
                   )
@@ -127,8 +132,8 @@ function App() {
                 }
               />
               <Route
-                path="/lessons"
-                element={!user ? <Navigate to="/login" /> : <LessonView language={language} />}
+                path="/lesson/:subjectId/:lessonId"
+                element={!user ? <Navigate to="/login" /> : <LessonView user={user} updateUser={handleUpdateUser} language={language} />}
               />
               <Route
                 path="/game/:subjectId"
@@ -142,7 +147,7 @@ function App() {
               />
               <Route
                 path="/quiz/:id"
-                element={!user ? <Navigate to="/login" /> : <QuizInterface language={language} />}
+                element={!user ? <Navigate to="/login" /> : <QuizInterface user={user} updateUser={handleUpdateUser} language={language} />}
               />
             </Routes>
           </main>
