@@ -24,7 +24,7 @@ const GameCard = ({ title, subject, difficulty, xpReward, progress, onPlay, colo
       <div className="flex items-center gap-4 text-xs text-gray-500 font-bold mb-6">
         <div className="flex items-center gap-1">
           <Clock className="w-3 h-3" />
-          5-10 min
+          5-10 min 
         </div>
         <div className="flex items-center gap-1">
           <Trophy className="w-3 h-3 text-indigo-500" />
